@@ -1,0 +1,27 @@
+@import '../Mixin/FontsMixins.sass'
+	
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: fixed
+	top: 0px
+	width: 1440px
+	height: 120px
+	background-color:#fff
+
+
+	&-list
+		display: flex
+		list-style-type: none
+		margin: 0
+		padding: 0
+		margin-left: 74px
+		&_item > a
+			@include bold
+			text-decoration: none
+			color: #000000
+			font-size: 24px
+			line-height: 36px
+		&_item:not(:last-child)
+			margin-right: 60px
