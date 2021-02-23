@@ -6,15 +6,15 @@ const ComponentWith3Buttons = ({title,mainDescription}) => {
 	const [activeTab, setActiveTab] = useState(1);
 	
 	const tabsState = [{
-		id: 'id1',
+		id: '1',
 		image: './images/ThreeButtonsComponents/FirstThreeButtons/1.png',
 		description: '1Planuri pentru studii sau carieră'
 	}, {
-		id: 'id2',
+		id: '2',
 		image: './images/ThreeButtonsComponents/FirstThreeButtons/1.png',
 		description: '2Planuri pentru studii sau carieră'
 	}, {
-		id: 'id3',
+		id: '3',
 		image: './images/ThreeButtonsComponents/FirstThreeButtons/1.png',
 		description: '3Planuri pentru studii sau carieră'
 	}]
@@ -27,7 +27,7 @@ const ComponentWith3Buttons = ({title,mainDescription}) => {
     return tabReturned
   }
 
-	const neededContent = findTabContent(tabsState, `id${activeTab}`)
+	const neededContent = findTabContent(tabsState, activeTab)
 	console.log(neededContent);
 	console.log(activeTab);
 
@@ -39,9 +39,11 @@ const ComponentWith3Buttons = ({title,mainDescription}) => {
 			<p className='three-buttons-description'>{mainDescription}</p> : 
 			<p style={{display: 'none'}} className='three-buttons-description'>{mainDescription}</p>}
 
-			<div className="content-wrapper content">
-				<img className="content-wrapper_img" src="./images/ThreeButtonsComponents/FirstThreeButtons/1.png" alt=""/>
+			<div className={activeTab === neededContent.id ? "content content-active" : "content"}>
+				<div className='content-wrapper'>
+				<img className="content-wrapper_img" src={neededContent.image} alt=""/>
 				<p className="content-wrapper_description">{neededContent.description}</p>
+			</div>
 			</div>
 
 			<div className="buttons-wrapper">

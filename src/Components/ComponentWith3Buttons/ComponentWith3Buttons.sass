@@ -11,16 +11,20 @@
 		width: 832px
 		margin: 0 auto
 		line-height: 36px
-	.content-wrapper
-		display: flex
-		align-items: center
-		width: 832px
-		margin: 90px auto
-		&_img
-			margin-right: 131px
-		&_description
-			@include bold
-			font-size: 32px	
+	.content
+		display: none
+		&-active
+			display: block
+		.content-wrapper
+			display: flex
+			align-items: center
+			width: 832px
+			margin: 90px auto
+			&_img
+				margin-right: 131px
+			&_description
+				@include bold
+				font-size: 32px	
 	.buttons-wrapper 
 		width: 832px
 		display: flex
