@@ -3,6 +3,8 @@ import './App.css';
 
 import 'normalize.css'
 
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom' 
+
 import Header from './Components/Header/Header'
 import SocialNav from './Components/SocialNav/SocialNav'
 import MainScreen from './Screens/MainScreen/MainScreen';
@@ -12,7 +14,11 @@ function App() {
     <div className="app">
      <Header />
 		 <SocialNav />
-		 <MainScreen />
+		 <Router>
+			 <Switch>
+				 <Route component={MainScreen} path='/' />
+			 </Switch>
+		 </Router>
     </div>
   );
 }

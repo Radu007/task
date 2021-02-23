@@ -1,0 +1,31 @@
+@import '../Mixin/FontsMixins.sass'
+.three-buttons
+	&-title 
+		@include bold
+		font-size: 60px
+		margin-bottom: 50px
+	&-description 
+		@include light
+		font-size: 24px
+		text-align: left
+		width: 832px
+		margin: 0 auto
+		line-height: 36px
+	.content-wrapper
+		display: flex
+		align-items: center
+		width: 832px
+		margin: 90px auto
+		&_img
+			margin-right: 131px
+		&_description
+			@include bold
+			font-size: 32px
+		
+	.buttons-wrapper 
+		width: 832px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 auto
+		
