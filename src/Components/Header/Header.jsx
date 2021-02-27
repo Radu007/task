@@ -15,7 +15,7 @@ const Header = () => {
 				<li className="header-list_item"><a href="#">FAQ</a></li>
 				<li className="header-list_item"><a href="#">Contact</a></li>
 			</ul>
-			<Button buttonText={'Join Us'} backgroundColor={'white'} width='190px' height='60px' fontSize='24px'/>
+			<Button buttonText={'Join Us'} backgroundColor={'white'} className={'button'} border={'bordered'} width='190px' height='60px' fontSize='24px'/>
 		</div>
 	)
 }
