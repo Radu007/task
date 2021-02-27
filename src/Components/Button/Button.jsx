@@ -3,8 +3,7 @@ import './Button.sass'
 
 const Button = ({buttonText,backgroundColor, width, height, fontSize, onClick, border, className}) => {
 	const styles = {
-		// backgroundColor: backgroundColor === 'gray' ? "#CFCECE" : '' ? backgroundColor === 'light' ? 'rgba(207, 206, 206, 0.4)' : 'white' : '#ffffff',
-		backgroundColor: backgroundColor === 'light' ? 'rgba(207, 206, 206, 0.4)' : "#CFCECE" ? backgroundColor === 'gray' ? "#CFCECE" : 'rgba(207, 206, 206, 0.4)' ? backgroundColor === 'white' ? '#ffffff' : '#ffffff' : 'gray' : 'white',
+		backgroundColor: backgroundColor === 'light' ? 'rgba(207, 206, 206, 0.4)' : "#CFCECE" ? backgroundColor === 'gray' ? "#CFCECE" : 'rgba(207, 206, 206, 0.4)' ? backgroundColor === 'white' ? '#ffffff' : '' : 'gray' : 'white',
 		width,
 		height,
 		fontSize,

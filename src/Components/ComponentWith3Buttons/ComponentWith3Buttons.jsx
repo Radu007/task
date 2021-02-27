@@ -53,15 +53,15 @@ console.log(filteredTabContent);
 
 			<div className={tabIndex === filteredTabContent.id ? "content content-active" : "content"}>
 				<div className='content-wrapper'>
-				<img className="content-wrapper_img" src={filteredTabContent.image} alt=""/>
-				<p className="content-wrapper_description">{filteredTabContent.description}</p>
-			</div>
+					<img className="content-wrapper_img" src={filteredTabContent.image} alt=""/>
+					<p className="content-wrapper_description">{filteredTabContent.description}</p>
+				</div>
 			</div>
 
 			<div className="buttons-wrapper">
-				<Button onClick={() => setTabIndex(1)} buttonText={'1.'} backgroundColor={tabIndex === 1 ? 'gray' : 'light'} className='button button-light-gray' width='190px' height='136px' fontSize='80px'/>
-				<Button onClick={() => setTabIndex(2)} buttonText={'2.'} backgroundColor={tabIndex === 2 ? 'gray' : 'light'} className='button button-light-gray' width='190px' height='136px' fontSize='80px'/>
-				<Button onClick={() => setTabIndex(3)} buttonText={'3.'} backgroundColor={tabIndex === 3 ? 'gray' : 'light'} className='button button-light-gray' width='190px' height='136px' fontSize='80px'/>
+				<Button onClick={() => setTabIndex(1)} buttonText={'1.'} backgroundColor={tabIndex === 1 ? 'gray' : 'light'} className='button tab-button' width='190px' height='136px' fontSize='80px'/>
+				<Button onClick={() => setTabIndex(2)} buttonText={'2.'} backgroundColor={tabIndex === 2 ? 'gray' : 'light'} className='button tab-button' width='190px' height='136px' fontSize='80px'/>
+				<Button onClick={() => setTabIndex(3)} buttonText={'3.'} backgroundColor={tabIndex === 3 ? 'gray' : 'light'} className='button tab-button' width='190px' height='136px' fontSize='80px'/>
 			</div>
 		</div>
 	)

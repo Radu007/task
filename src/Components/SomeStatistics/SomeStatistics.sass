@@ -1,0 +1,31 @@
+@import '../Mixin/FontsMixins.sass'
+	
+.statistics
+	width: 1260px
+	margin: 0 auto
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr
+	grid-template-rows: 1fr 1fr
+	align-items: center
+	grid-gap: 24px
+	margin-top: 50px
+	&-wrapper
+		width: 404px
+		height: 168px
+		background: #CFCECE
+		border-radius: 32px
+		&_title
+			@include bold
+			font-size: 80px
+			margin: 15px 109.5px 10px 109.5px
+			text-align: center
+		&_subtitle
+			@include bold
+			font-size: 24px
+			margin: 0
+			text-align: center
+		&-text
+			@include bold
+			font-size: 32px
+			background: #fff
+			line-height: 48px
