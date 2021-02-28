@@ -1,0 +1,47 @@
+@import '../Mixin/FontsMixins.sass'
+.carousel
+	margin-top: 100px
+	&-title
+		@include bold
+		font-size: 60px;
+		line-height: 90px;
+		margin-bottom: 50px
+.card-wrapper
+	z-index: -1
+	width: 404px
+	height: 492px
+	margin: 0 auto
+	.card
+		text-align: center
+		width: 404px
+		height: 262px
+		background: #CFCECE;
+		border-radius: 40px;
+	.card > img
+		display: inline-block
+		margin: 71px 5px
+.card-content
+	.card-title
+		@include bold
+		font-size: 24px;
+		line-height: 36px;
+	.card-subtitle
+		@include light
+		font-size: 16px;
+		line-height: 24px;
+		color: #000000;
+	.card-data
+		@include light
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.5);
+
+.carousel-container
+	width: 1260px
+	margin: 0 auto
+.react-multiple-carousel__arrow
+	position: absolute
+	background-color: #fff
+	border: solid black
+	top: 22%
+	

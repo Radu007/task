@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../Components/Button/Button'
+import CarouselComponent from '../../Components/Carousel/CarouselComponent'
 import ComponentWith3Buttons from '../../Components/ComponentWith3Buttons/ComponentWith3Buttons'
 import SomeStatistics from '../../Components/SomeStatistics/SomeStatistics'
 import './MainScreen.sass'
@@ -14,6 +15,7 @@ function MainScreen() {
 			</div>
 			<ComponentWith3Buttons title={'În ce constă programul?'} mainDescription={'Programul de mentorat constă în discuții, tête-à-tête sau virtuale, dintre un mentor și un mentee, în care pot fi abordate următoarele subiecte:'}/>
 			<SomeStatistics />
+			<CarouselComponent />
 		</div>
 	)
 }
