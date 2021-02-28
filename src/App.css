@@ -1,6 +1,10 @@
 .app {
-	padding: 30px 90px 0px 90px;
-	max-width: 1440px;
 	height: 100vh;
+	margin: 0 auto;
+}
+
+.app .app-main-screen {
+	width: 1440px;
+	padding: 30px 90px 0px 90px;
 	margin: 0 auto;
 }
